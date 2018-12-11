@@ -1,4 +1,2 @@
-require('aframe')
-require('./mycursor')
-
-console.log('hey')
+import 'aframe'
+import './mycursor'

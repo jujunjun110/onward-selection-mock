@@ -7,11 +7,11 @@
 <script src="./assets/bundle.js"></script>
 <body>
     <a-scene>
-      <a-cylinder position="-1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-cylinder position="0 0.75 -5" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-cylinder data-model-id="1" class="walker" position="-1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-cylinder data-model-id="2" class="walker" position="0 0.75 -5" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-cylinder data-model-id="3" class="walker" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-camera>
-        <a-cursor raycaster mycursor></a-cursor>
+        <a-cursor raycaster="objects: .walker" mycursor></a-cursor>
       </a-camera>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
