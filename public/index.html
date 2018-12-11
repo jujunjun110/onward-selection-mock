@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
 </head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <script src="./assets/bundle.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <body>
-    <a-scene>
+  <div id="container">
+    <div id="ui">
+      <div id="info-area">
+        hoi
+      </div>
+    </div>
+    <a-scene id="aframe">
       <a-cylinder data-model-id="1" class="walker" position="-1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-cylinder data-model-id="2" class="walker" position="0 0.75 -5" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-cylinder data-model-id="3" class="walker" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
@@ -15,5 +26,8 @@
       </a-camera>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
-    </a-scene></body>
+    </a-scene>
+  </div>
+</body>
+
 </html>
