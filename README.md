@@ -1,5 +1,5 @@
-# aframe-mock-template
-- A-Frameでちょっとしたデモを作るためのテンプレート
+# onward-selection-mock
+- アプリケーションをカーソルで選んで詳細をみる部分のモック
 
 # 使い方
 - 初期化 `npm install`
