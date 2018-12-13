@@ -1,6 +1,5 @@
 window.onload = () => {
-  document.querySelector('#panel').addEventListener('focused', (e) => {
-    console.log('triggered')
-    console.log(e)
+  document.querySelector('#display-panel .button').addEventListener('click', (e) => {
+    console.log('clicked')
   })
 }

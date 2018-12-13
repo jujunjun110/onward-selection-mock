@@ -22,9 +22,12 @@ AFRAME.registerComponent('mycursor', {
     this.el.setAttribute('geometry', this.data.normalGeometry)
 
     this.el.addEventListener('raycaster-intersection', (intersection) => {
-      const nearestElement = this.getNearestElement(intersection)
-      console.log(nearestElement.getAttribute('data-model-id'))
       this.el.setAttribute('geometry', this.data.focusGeometry)
+      const nearestElement = this.getNearestElement(intersection)
+      if (nearestElement) {
+        const itemId = nearestElement.getAttribute('data-model-id')
+        this.showPanel(itemId)
+      }
     })
 
     this.el.addEventListener('raycaster-intersection-cleared', (intersection) => {
@@ -36,5 +39,10 @@ AFRAME.registerComponent('mycursor', {
       return null
     }
     return intersection.detail.els[0]
+  },
+  showPanel: function (itemId) {
+    document.querySelector('#display-panel').classList.add('active')
+    const panel = document.querySelector('#display-panel .img-area')
+    panel.setAttribute('style', 'background-image: url("./img/img' + itemId + '.jpg")')
   }
 })

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode=development",
+    "dev": "webpack-dev-server --mode=development --host $(ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\\  -f2)",
     "build": "webpack-cli --mode=production",
     "lint": "eslint --fix src"
   },
