@@ -20,16 +20,17 @@
       </div>
     </div>
     <a-scene id="aframe">
-      <a-cylinder data-model-id="2" class="walker" position=" 0 0.75 -5" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-cylinder data-model-id="2" class="walker" position=" 0 0.75 -5" radius="0.5" height="1.5" color="#FFC65D"
+        main-walker></a-cylinder>
       <a-cylinder data-model-id="3" class="walker" position=" 2 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-cylinder data-model-id="1" class="walker" position="-2 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-cylinder data-model-id="1" class="walker" position=" 2 0.75 -1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-cylinder data-model-id="3" class="walker" position="-2 0.75 -1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-camera>
+      <a-camera position="2 1.6 2">
         <a-cursor raycaster="objects: .walker" mycursor></a-cursor>
       </a-camera>
       <a-plane position="0 0.1 -4" rotation="-90 0 0" width="2" height="40" color="#fff"></a-plane>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="#7BC8A4"></a-plane>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="#444"></a-plane>
       <a-sky color="#666"></a-sky>
     </a-scene>
   </div>
