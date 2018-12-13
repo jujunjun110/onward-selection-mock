@@ -23,6 +23,7 @@ AFRAME.registerComponent('mycursor', {
 
     this.el.addEventListener('raycaster-intersection', (intersection) => {
       this.el.setAttribute('geometry', this.data.focusGeometry)
+
       const nearestElement = this.getNearestElement(intersection)
       if (nearestElement) {
         const itemId = nearestElement.getAttribute('data-model-id')

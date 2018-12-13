@@ -13,7 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "aframe": "^0.8.2",
-    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "css-loader": "^2.0.0",
